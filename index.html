@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <style>
+        /*基本的界面*/
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        
+        body{
+            width: 100%;
+            background:#ddd;
+            margin: 0;
+            padding: 0;
+        }
+        #header{height: 50px;background:#eee;font-size: 20px;line-height: 50px;text-align: center;border-bottom: 1px solid grey; }
+        #area{
+            width: 300px;
+            height: 300px;
+            max-width: 600px;
+            margin: 20px auto;
+            position: relative;
+        }
+        #alert , #box{text-align: center;}
+    </style>
+    <div id="header">
+        手势密码
+    </div>
+    <div id="area">
+    </div>
+    <div id="alert"></div>
+    <form id="box" >
+    <input type="radio" value="set" name="choice" checked>设置密码</input>
+    <input type="radio" value="check" name="choice">验证</input>
+    </form>
+    <script src="/bundle.js"></script>
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
